@@ -1,0 +1,31 @@
+<%- include("../partials/header")%>
+
+<div class="container-fluid">
+	<div class="container">
+		<h1>
+			Chi Siamo
+		</h1>
+		<p>
+			Lo Studio Odontoiatrico Associato Dr. M. e M. Licata nasce nel **** (........)
+		</p>
+		<h3>
+			Incontra i Nostri Dottori
+		</h3>
+		<div class="row justify-content-around">
+			<% staff.forEach(function(staff){%>
+			<div >
+				<div class="card" style="width: 20rem;">
+					<img src="<%=staff.img%>">
+					<div class="card-body">
+						<h5 class="card-title"><%=staff.name%></h5>
+						<p class="card-text">descrizione 20 caratteri +- </p>
+						<a href="/staff/<%=staff._id%>" class="btn btn-primary">Più Info</a>
+					</div>
+				</div>
+			</div>
+			<% }) %>	
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer")%>

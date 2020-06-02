@@ -1,0 +1,25 @@
+<%- include("../partials/header_eng")%>
+
+<div class="container-fluid">
+	<div class="container">
+		<h1 class="caption text-center">
+					<%=staff.name %>
+				</h1>
+		<div class="d-flex flex-row text-center">
+			<div class="col-md-6">
+				
+				<div class="thumbnail">
+					
+					<img class="image-responsive" src="<%=staff.img%>">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p>
+					<%=staff.description%>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer_eng")%>

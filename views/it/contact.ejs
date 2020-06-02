@@ -1,0 +1,42 @@
+<%-include("../partials/header")%>
+
+<div class="container">
+	<div>
+		<h1>
+			Dove Siamo 
+		</h1>
+	</div>
+	<div id="map"></div>
+	<div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item"><h3>Indrizzo:</h3> Via Perpignano 184/n
+		90135 PALERMO (PA)</li>
+			<li class="list-group-item"> <h3>Contattaci:</h3> 
+				<ul>
+					<li class="list-group-item">Email: ituoidentisti@libero.it</li>
+					<li class="list-group-item">Numero di Telefono e Fax: 091 6522058</li>
+				</ul>
+			</li>
+			<li class="list-group-item"> <h3>Orari di Apertura:</h3>
+				<ul>
+					<li class="list-group-item">Lunedì e Venerdì dalle 12:00 alle 19:00</li>
+					<li class="list-group-item">Martedì e Mercoledì dalle 09:30 alle 17:00</li>
+				</ul>
+			</li>
+		</ul>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqokr-5NBsx6laFA1dpxDj-JMa-Vjfcig&callback=initMap"></script>
+	<script>
+ function initMap() {
+  var studio = {lat: 38.118898, lng: 13.334038};
+  
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: studio});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: studio, map: map});
+	 map.setZoom(16)
+}
+		initMap();
+</script>
+<%-include("../partials/footer")%>

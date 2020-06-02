@@ -1,0 +1,88 @@
+<%- include("../partials/header_eng") %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 style="text-align: center">Book an Appointment</h1>
+			<div id="booking-form">
+				<form class="booking-form" action="#" method="POST">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="name" name="name">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="surname" name="surname">	
+					</div>
+					<br>
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="Phone Number" name="tel">	
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="Email" name="email">	
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="sel1">Select a reason:</label>
+								<select class="form-control" id="sel1">
+									<option value="" disabled selected>Reason</option>
+									<option value="1">Protesi Fissa in Ceramica Integrale</option>
+									<option value="2">Protesi Mobile Scheletrata</option>
+									<option value="3">Impiantologia</option>
+									<option value="4">Conservativa</option>
+									<option value="5">Endodonzia</option>
+									<option value="6">Chirurgia Orale</option>
+									<option value="7">Ortodonzia</option>
+									<option value="8">Altro</option>
+								</select>
+								<label for="sel1">Select a day:</label>
+								<select class="form-control" id="sel2">
+									<option value="" disabled selected>Day of the week</option>
+									<option value="1">Monday</option>
+									<option value="2">Tuesday</option>
+									<option value="3">Wednesday</option>
+									<option value="4">Friday</option>
+								</select>
+								<label for="sel1">Select a time:</label>
+								<select class="form-control" id="sel3">
+									<option value="" disabled selected>Times available</option>
+									<option value="1">09:00 - 11:00</option>
+									<option value="2">11:00 - 13:00</option>
+									<option value="3">13:00 - 15:00</option>
+									<option value="4">15:00 - 17:00</option>
+									<option value="5">17:00 - 19:00</option>
+								</select>
+								<div class="form-group" id="textarea_div">
+									<p>By law the below needs to be accepted. Please read it first </p>
+									<textarea id="textarea" col="10" rows="4" disabled>Informativa ai sensi dell’art.13 del Regolamento (UE) 2016/679
+									Ai sensi dell’art.13 del Regolamento (UE) 2016/679 relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali nonché alla libera circolazione di tali dati, lo scrivente Titolare del Trattamento la informa di quanto segue:
+									I. Base giuridica e Finalità del trattamento dati. Il trattamento dei suoi dati personali inseriti nella form è basato su quanto previsto dagli artt. 6 e 9 del Regolamento (UE) 2016/679, sul suo consenso ovvero sul legittimo interesse dello scrivente Titolare a difendere i propri diritti in un eventuale contenzioso, e ha la finalità di svolgere l’attività da lei richiesta tramite la compilazione e l’invio della form, corrispondente alla prenotazione di un appuntamento.
+									II. Modalità di trattamento dei dati. Il trattamento dei dati sarà improntato ai principi di correttezza, liceità e trasparenza e potrà essere effettuato con mezzi manuali, informatici e telematici, su supporti cartacei e/o digitali. Il trattamento verrà effettuato in modo da garantire la sicurezza e la riservatezza dei dati stessi.
+									III. Destinatari dei dati personali. I suoi dati personali potranno essere trattati, tenuto conto e nel rispetto del segreto professionale, da Incaricati del Titolare debitamente individuati e istruiti.
+									IV. Periodo di conservazione dei dati. I suoi dati personali saranno conservati per un massimo di sei mesi successivi alla data dell’appuntamento da lei richiesto; decorso tale termine, se non normati da futuri consensi, saranno cancellati.
+									V. Consenso dell’interessato. Il trattamento dei suoi dati personali come sopra illustrato ha natura obbligatoria per svolgere l’attività di prenotazione appuntamento da lei richiesta tramite la compilazione della form. Compilando e inviando la form lei acconsente quindi al trattamento dei suoi dati alle condizioni di cui alla presente informativa.
+									VI. Diritti dell’interessato. Il Regolamento (UE) 2016/679 con riferimento ai dati personali le conferisce specifici diritti, tra cui citiamo a titolo non esaustivo quelli di chiedere l’accesso ai dati personali e la rettifica o la cancellazione degli stessi o la limitazione del trattamento che li riguardano o di opporsi al trattamento stesso, oltre che il diritto a ricevere i suoi dati personali in un formato strutturato di uso comune e leggibile da dispositivo automatico (diritto alla portabilità). Detto Regolamento Le conferisce altresì il diritto a proporre reclamo a un’Autorità di controllo, oltre che il diritto a revocare il consenso al trattamento.
+									VII. Titolare e Responsabile della protezione dei dati
+									Il Titolare del Trattamento dei suoi dati è la persona fisica e/o il soggetto giuridico riportato nella home page del sito web da cui lei ha scaricato la presente informativa.
+									
+									**Attenzione! Ai fini di tutela della privacy e in ottemperanza alla normativa di riferimento, questa form non è compatibile con l’inserimento di dati sensibili. La preghiamo pertanto di NON inserire nel campo "Problema" dati relativi al Suo specifico stato di salute e/o altri dati sensibili. Viceversa, è consentito l’inserimento di terminologia generica, come ad esempio “richiesta pulizia dei denti” o “ricerca carie”, ecc..</textarea>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+										<label class="form-check-label" for="defaultCheck1">
+										  Accept
+										</label>
+									  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-lg btn-primary btn-block">Send</button>	
+					</div>
+				</form>
+				<a href="/eng/services">Go Back</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer_eng") %>

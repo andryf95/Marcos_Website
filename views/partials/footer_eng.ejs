@@ -1,0 +1,80 @@
+	
+</main>
+<div id="interestingFactdiv">
+		<div class="interestingFactS">
+			<h3>
+				Interesting Facts:
+			</h3>
+			<p id="interestingFact">
+			</p>
+			<div id="footerFact">
+				<h5>
+			Do you want one more?
+			</h5>
+			<button class="btn btn-success">
+				Click me
+			</button>
+			</div>
+			
+		</div>
+	</div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+	var facts= 
+		[
+			"The average American spends 38.5 total days brushing their teeth over a lifetime.",
+			"People who drink 3 or more glasses of soda each day have 62% more tooth decay, fillings and tooth loss than others. Put down the pop and sports drinks and pick up some nice fresh water instead.",
+			"Tooth enamel is the hardest substance in the human body. However, we do not recommend that you use your pearly whites to open bottle caps!",
+			"If you don’t floss, you miss cleaning 40% of your tooth surfaces. Make sure you brush and floss twice a day!",
+			"If you're right handed, you will chew your food on your right side. If you're left handed, you will tend to chew your food on your left side.",
+			"Every year, kids in North America spend close to half a million dollars on chewing gum.",
+			"More people use blue toothbrushes than red ones.",
+			"Like fingerprints, everyone's tongue print is different",
+			"The average woman smiles 62 times a day. The average man smiles about 8 times a day.",
+			"Kids laugh around 400 times a day, adults just 15 times a day.",
+			"Giraffes only have bottom teeth.",
+			"Just like finger prints, tooth prints are unique to each individual.",
+			"The average person only brushes for 45 to 70 seconds a day, the recommended amount of time is 2-3 minutes.",
+			"78% of Americans have had at least 1 cavity by age 17.",
+			"1882 was the year commercial floss was first manufactured.",
+			"The most valuable tooth belonged to Sir Isaac Newton. In 1816 one of his teeth was sold in London for $3,633, or in today's terms $35,700. The tooth was set in a ring! (source: Guinness World Records 2002).",
+			"More than 300 types of bacteria make up dental plaque.",
+			"Dogs have 42 teeth, cats have 30 teeth, pigs have 44 teeth, and an armadillo has 104 teeth.",
+			"A snail's mouth is no larger than the head of a pin, but it can have over 25,000 teeth!",
+			"The elephant grinds its molars and grows new ones. This happens six times in a lifetime! An elephant's molar is about 7 inches square and can weigh over 6 pounds",
+			"The Blue Whale is the largest mammal on earth, but it eats only tiny shrimp because it has no teeth.",
+			"The Crocodile Bird flies into the open mouth of a crocodile and cleans the crocodile's teeth!",
+			"There are 10-12 teaspoons of sugar in a single can of soda.",
+			"In 1866, Lucy Beaman Hobbs became the first licensed female dentist.",
+			"In 1986, the winner of the National Spelling Bee won by spelling ODONTALGIA (which means toothache)",
+			"The average amount of money left by the tooth fairy in 1950 was 25 cents. In 1988 it was $1.00, the going rate now is $2.00.",
+			"The earliest dentist known by name is Hesi-Re. He lived in Egypt over 5,000 years ago.",
+			"The first toothbrushes were tree twigs. Chewing on the tips of the twigs spread out the fibers, which were then used to clean the teeth.",
+			"Ancient Greeks used pumice, talc, alabaster, coral powder or iron rust as toothpaste.",
+			"George Washington never had wooden teeth. His dentures were made from gold, hippopotamus tusk, elephant ivory and human teeth!",
+			"In 1905, Dental Assistant Irene Newman was trained to clean teeth. She became the first Dental Hygienist."
+		];
+	function newFact(){
+var randomNumber=Math.floor(Math.random()*(31));
+    document.getElementById('interestingFact').innerHTML=((facts.indexOf(facts[randomNumber])+1)+ "/" + "31 : " + facts[randomNumber]);
+		
+}
+	
+	newFact();
+	$(".btn").click(function(){
+  	$("#interestingFact").fadeOut(1000);
+		setTimeout(newFact,1000);
+	$("#interestingFact").fadeIn(1000);
+	})
+	$(document).ready(function() {
+	// get current URL path and assign 'active' class
+	var pathname = window.location.pathname;
+	$('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+})
+
+</script>
+  </body>
+</html>

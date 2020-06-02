@@ -1,0 +1,60 @@
+	
+</main>
+<div id="interestingFactdiv">
+		<div class="interestingFactS">
+			<h3>
+				Fatti interessanti:
+			</h3>
+			<p id="interestingFact">
+			</p>
+			<div id="footerFact">
+				<h5>
+			Ne vuoi un altro?
+			</h5>
+			<button class="btn btn-success">
+				Cliccami
+			</button>
+			</div>
+			
+		</div>
+	</div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+	var facts= 
+		[
+			"Lo smalto dentale che ricopre i nostri denti è il tessuto più duro dell’organismo è secondo solo dopo al diamante",
+			"In media il tempo impiegato da ogni persona per lavarsi i denti nell’arco della vita è di 40 giorni.",
+			"Un cubetto di formaggio dopo il pranzo, aiuta a prevenire le carie. Perché vi domanderete? Questo procedimento si attua soprattutto dopo aver mangiato cibi acidi, il formaggio rende la saliva più alcalina, diminuendo così l’erosione dentale e il rischio di carie.",
+			"Il dente più costoso? Sicuramente il dente di Isaac Newton! Infatti agli inizi del 1800 è stato venduto a Londra per una cifra che oggi corrisponderebbe a più di 35.000 dollari.",
+			"L’igiene dentale ha origini antichissime, infatti i primi antenati del dentifricio risalgono a quasi 5.000 anni fa, così come i primi spazzolini da denti.",
+			"La seduta dal dentista può essere meno dolorosa se coniugata a delle sedute di agopuntura, in grado di risolvere diversi disturbi muscolari e articolari oltre che stati d’ansia e attacchi di panico.",
+			"Il popolo Inca la sapeva lunga sul mal di denti. Un buon rimedio era masticare una pianta tropicale chiamata “Alcamella”, nota anche con il nome di “Crescione di Para”, oggetto di studio delle maggiori case farmaceutiche.",
+			"Dove si può visitare un museo dentale? Sicuramente a Londra al “British Dental Association Museum”. A Torino invece si trova il Museo di Odontoiatria dell’Università  degli Studi di Torino, mentre a Lione si può visitare il Musèe de Chirurgie Dentarie. La lista sarebbe ancora lunga, ma questi sono i 3 principali!",
+			"Quando nascono i denti? Nonostante la dentizione nei neonati cominci a manifestarsi solo dopo il sesto mese di vita, in realtà i denti cominciano a formarsi nel feto già intorno alla dodicesima settimana di gravidanza.",
+			"in Norvegia i bambini possono donare i loro denti da latte aiutando la scienza. Oltre ai denti, l’istituto di ricerca richiede un campione di sangue e un altro di urina della madre del bambino. I ricercatori utilizzeranno i denti decidui per studiare sia gli aspetti genetici, sia la trasmissione batterica."
+		];
+	function newFact(){
+var randomNumber=Math.floor(Math.random()*(10));
+    document.getElementById('interestingFact').innerHTML=((facts.indexOf(facts[randomNumber])+1)+ "/" + "10 : " + facts[randomNumber]);
+		
+}
+	
+	newFact();
+	$(".btn").click(function(){
+  	$("#interestingFact").fadeOut(1000);
+		setTimeout(newFact,1000);
+	$("#interestingFact").fadeIn(1000);
+	})
+	$(document).ready(function() {
+	// get current URL path and assign 'active' class
+	var pathname = window.location.pathname;
+	$('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+})
+
+</script>
+  </body>
+</html>
+

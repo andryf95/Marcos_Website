@@ -1,0 +1,227 @@
+
+#brand_name {
+}
+
+#carouselExampleIndicators{
+	padding-top:67px;
+	height:550px;
+	height: 100%;
+	
+}
+
+#carouselExampleIndicators>.carousel-inner>.carousel-item>img {
+	max-height:550px;
+	height:inherit;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	padding-top: inherit;
+}
+
+.carousel-caption {
+	padding-bottom:50px;
+}
+
+.carousel-indicators {
+	top:500px;
+}
+.card-img {
+	height: 400px;
+}
+
+.nav-link-on {
+	background-color: blue;
+}
+
+.navbar {
+	margin-bottom: 30px;
+}
+img {
+	height: 300px;
+}
+
+
+.container {
+	padding-top:70px;
+}
+.image-responsive {
+	width: 350px;
+	height: 500px;
+}
+
+#interestingFactdiv {
+	padding-bottom:10px;
+	height: auto;
+	max-width: 100%;
+	background: #B993D6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ text-align: center
+}
+.interestingFactS {
+	
+	padding:50px 200px 0px 200px;
+	margin-top: 10px;
+}
+
+
+
+body {
+	font-family: 'Mukta', sans-serif;
+}
+#footerFact {
+	
+	margin-top: 20px ;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.link-serv {
+	margin-top: 15px;
+}
+main {
+	margin-bottom: 50px;
+}
+#brand {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.list-group-flush {
+	margin-top: 10px;
+}
+
+#textarea_div {
+	margin-top:30px;
+}
+#textarea {
+	width: 100%;
+	
+}
+
+
+@media only screen and (max-width: 365px) {
+	
+	#brand_name {
+		display:none;
+	}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#carouselExampleIndicators{
+		padding-top:67px;
+		height:200px;
+		height: 100%;
+		
+	}
+	.marketing {
+		padding-top:10px;
+	}
+	
+	#carouselExampleIndicators>.carousel-inner>.carousel-item>img {
+		max-height:200px;
+		height:200px;
+	}
+	.carousel-indicators {
+		top:250px;
+	}
+	.interestingFactS {
+	
+		padding:50px 10px 0px 10px;
+		margin-top: 10px;
+	}
+	#booking-form {
+		width: 70%; 
+		margin:25px auto
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#carouselExampleIndicators{
+		padding-top:67px;
+		height:257px;
+		height: 100%;
+		
+	}
+	
+	#carouselExampleIndicators>.carousel-inner>.carousel-item>img {
+		max-height:257px;
+		height:inherit;
+	}
+	.carousel-indicators {
+		top:276px;
+	}
+	.interestingFactS {
+	
+		padding:50px 100px 0px 100px;
+		margin-top: 10px;
+	}
+	#booking-form {
+		width: 50%; 
+		margin:25px auto
+	}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#carouselExampleIndicators{
+		padding-top:67px;
+		height:352px;
+		height: 100%;
+		
+	}
+	
+	#carouselExampleIndicators>.carousel-inner>.carousel-item>img {
+		max-height:352px;
+		height:inherit;
+	}
+	.carousel-indicators {
+		top:380px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+#carouselExampleIndicators{
+	padding-top:67px;
+	height:450px;
+	height: 100%;
+	
+}
+
+#carouselExampleIndicators>.carousel-inner>.carousel-item>img {
+	max-height:450px;
+	height:inherit;
+}
+#booking-form {
+	width: 30%; 
+	margin:25px auto
+}
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+#carouselExampleIndicators{
+	padding-top:67px;
+	height:550px;
+	height: 100%;
+	
+}
+
+#carouselExampleIndicators>.carousel-inner>.carousel-item>img {
+	max-height:550px;
+	height:inherit;
+}
+.carousel-indicators {
+	top:600px;
+}
+}
