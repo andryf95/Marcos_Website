@@ -74,6 +74,14 @@ app.get("/eng/staff/:id", function(req, res){
 		}
 	})
 })
+
+app.get("/gallery", function(req, res){
+	res.render("it/gallery")
+})
+
+app.get("/eng/gallery", function(req, res){
+	res.render("eng/gallery")
+})
 app.get("/booking", function(req, res){
 	res.render("it/booking");
 })
