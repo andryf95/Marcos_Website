@@ -107,36 +107,17 @@ main {
 	-o-transition: -o-transform .5s ease-in-out;
 	transition: transform .5s ease-in-out;
  }
- #mobileAlt{
-	 display:none;
- }
+ 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	#carouselExampleIndicators{
 		padding-top:67px;
 		height:200px;
 		height: 100%;
-		/* display: none; */
+		
 		
 	}
-	#mobileAlt{
-		display:block;
-		height: 100%;
-		position: relative;
-		text-align: center;
-		color: black;
-	}
-	#mobileAlt>img {
-		width:100%;
-		height:200px;
-	}
-	.centered {
-		position: absolute;
-		top: 85%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 70%;
-	  }
+
 	.marketing {
 		padding-top:10px;
 	}
