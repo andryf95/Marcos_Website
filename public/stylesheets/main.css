@@ -107,6 +107,7 @@ main {
 	-o-transition: -o-transform .5s ease-in-out;
 	transition: transform .5s ease-in-out;
  }
+ #mobileAlt {display:none;}
  
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -114,10 +115,14 @@ main {
 		padding-top:67px;
 		height:200px;
 		height: 100%;
-		
-		
 	}
+	#mobileAlt {display:block;}
 
+	.btn-outline-warning{
+	font-size: 12px;
+ 
+    padding: 6px;
+	}
 	.marketing {
 		padding-top:10px;
 	}
