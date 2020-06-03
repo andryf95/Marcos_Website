@@ -102,12 +102,6 @@ main {
 }
 
 
-@media only screen and (max-width: 365px) {
-	
-	#brand_name {
-		display:none;
-	}
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	#carouselExampleIndicators{
@@ -135,6 +129,9 @@ main {
 	#booking-form {
 		width: 70%; 
 		margin:25px auto
+	}
+	#brand_name {
+		display:none;
 	}
 }
 
